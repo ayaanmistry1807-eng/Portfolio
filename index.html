@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayaan Asif Mistry</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== STAR CANVAS ===== -->
+  <canvas id="starfield"></canvas>
+
+  <!-- ===== CURSOR ===== -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>AAM<span class="logo-bracket">/&gt;</span>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certificates" class="nav-link">Certificates</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="hero-greeting"><span class="greeting-line"></span> Hello, Universe 👋</p>
+        <h1 class="hero-name">
+          <span class="name-line" data-text="Ayaan">Ayaan</span><br>
+          <span class="name-line accent" data-text="Asif Mistry">Asif Mistry</span>
+        </h1>
+        <div class="hero-role">
+          <span class="role-prefix">I am a </span>
+          <span class="typewriter" id="typewriter"></span><span class="type-cursor">|</span>
+        </div>
+        <p class="hero-tagline">Building intelligent web experiences at the intersection of <span class="highlight">AI</span> and <span class="highlight">Full Stack</span> development.</p>
+        <div class="hero-skills">
+          <span class="skill-badge"><i class="fab fa-html5"></i> HTML5</span>
+          <span class="skill-badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+          <span class="skill-badge"><i class="fab fa-js-square"></i> JavaScript</span>
+          <span class="skill-badge"><i class="fas fa-robot"></i> AI/ML</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View My Work <i class="fas fa-rocket"></i></a>
+          <a href="#contact" class="btn-outline">Get In Touch <i class="fas fa-satellite-dish"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orbit-container">
+          <div class="orbit orbit-1">
+            <div class="planet planet-html"><i class="fab fa-html5"></i></div>
+          </div>
+          <div class="orbit orbit-2">
+            <div class="planet planet-css"><i class="fab fa-css3-alt"></i></div>
+          </div>
+          <div class="orbit orbit-3">
+            <div class="planet planet-js"><i class="fab fa-js"></i></div>
+          </div>
+          <div class="photo-frame">
+            <div class="photo-glow"></div>
+            <img src="photo.png" alt="Ayaan Asif Mistry" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder" style="display:none;">
+              <i class="fas fa-user-astronaut"></i>
+              <span>photo.png</span>
+            </div>
+            <div class="photo-ring-outer"></div>
+            <div class="photo-ring-inner"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// WHO_AM_I</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <div class="card-icon"><i class="fas fa-code"></i></div>
+          <h3>Developer</h3>
+          <p>AI-Assisted Full Stack Web Developer with strong command over HTML, CSS & JavaScript. I craft responsive, modern web experiences powered by intelligence.</p>
+        </div>
+        <div class="about-card glass-card featured-card">
+          <div class="card-icon brain-icon"><i class="fas fa-brain"></i></div>
+          <h3>AI Enthusiast</h3>
+          <p>Pursuing B.Tech in CSE with specialization in AI & ML, I merge academic knowledge with real-world projects to push boundaries of what's possible on the web.</p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="card-icon"><i class="fas fa-bullhorn"></i></div>
+          <h3>Campus Ambassador</h3>
+          <p>Serving as Campus Ambassador at <span class="highlight">Mentversity</span> since October 2025, bridging students with impactful mentorship opportunities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// EDUCATION_LOG</span>
+        <h2 class="section-title">My <span class="accent">Journey</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos="left">
+          <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-badge ongoing">Ongoing</div>
+            <h3>B.Tech — Computer Science & Engineering</h3>
+            <h4><i class="fas fa-microchip"></i> Specialization: AI & Machine Learning</h4>
+            <p class="timeline-school"><i class="fas fa-university"></i> Currently Pursuing</p>
+            <div class="timeline-tags">
+              <span>AI</span><span>ML</span><span>CSE</span><span>B.Tech</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="right">
+          <div class="timeline-dot"><i class="fas fa-satellite"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-badge ambassador">Ambassador</div>
+            <h3>Campus Ambassador — Mentversity</h3>
+            <h4><i class="fas fa-calendar-alt"></i> October 2025 – Present</h4>
+            <p>Connecting students with mentors, fostering professional growth and learning opportunities on campus.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="left">
+          <div class="timeline-dot"><i class="fas fa-atom"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-badge score">63%</div>
+            <h3>Class 12 — Science</h3>
+            <p class="timeline-school"><i class="fas fa-school"></i> MES Crescent English High School & Jr College</p>
+            <div class="timeline-tags">
+              <span>Science</span><span>HSC</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="right">
+          <div class="timeline-dot"><i class="fas fa-star"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-badge score top-score">88%</div>
+            <h3>Class 10 — SSC</h3>
+            <p class="timeline-school"><i class="fas fa-school"></i> Symbiosis Convent High School & Jr College</p>
+            <div class="timeline-tags">
+              <span>SSC</span><span>Top Performer</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// MISSION_CONTROL</span>
+        <h2 class="section-title">My <span class="accent">Projects</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <a href="https://classsphere.onrender.com" target="_blank" class="project-card glass-card project-completed">
+          <div class="project-status completed"><span class="pulse"></span> Completed</div>
+          <div class="project-icon"><i class="fas fa-globe"></i></div>
+          <h3>ClassSphere</h3>
+          <p>A full-stack web platform crafted to enhance classroom collaboration and digital learning experiences.</p>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Full Stack</span>
+          </div>
+          <div class="project-link">
+            Visit Live Site <i class="fas fa-external-link-alt"></i>
+          </div>
+        </a>
+
+        <div class="project-card glass-card project-ongoing">
+          <div class="project-status ongoing-badge"><span class="pulse-orange"></span> In Progress</div>
+          <div class="project-icon ai-icon"><i class="fas fa-robot"></i></div>
+          <h3>ZendexAI</h3>
+          <p>An AI-powered web application currently in active development — combining intelligence with sleek interfaces to solve real-world problems.</p>
+          <div class="project-stack">
+            <span>AI/ML</span><span>Full Stack</span><span>JavaScript</span>
+          </div>
+          <div class="project-link coming-soon">
+            Coming Soon <i class="fas fa-satellite"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATES ===== -->
+  <section id="certificates" class="section certs-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// ACHIEVEMENTS_UNLOCKED</span>
+        <h2 class="section-title">My <span class="accent">Certificates</span></h2>
+        <div class="title-line"></div>
+        <p class="section-subtitle">Click on any certificate to view it in full</p>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card" onclick="openCert('certificate1.jpeg', 1)">
+          <div class="cert-img-wrap">
+            <img src="certificate1.jpeg" alt="Certificate 1" loading="lazy" onerror="this.parentElement.classList.add('cert-missing')" />
+            <div class="cert-overlay"><i class="fas fa-expand"></i></div>
+            <div class="cert-placeholder-icon"><i class="fas fa-award"></i></div>
+          </div>
+          <div class="cert-label">Certificate <span class="cert-num">01</span></div>
+        </div>
+        <div class="cert-card" onclick="openCert('certificate2.jpeg', 2)">
+          <div class="cert-img-wrap">
+            <img src="certificate2.jpeg" alt="Certificate 2" loading="lazy" onerror="this.parentElement.classList.add('cert-missing')" />
+            <div class="cert-overlay"><i class="fas fa-expand"></i></div>
+            <div class="cert-placeholder-icon"><i class="fas fa-award"></i></div>
+          </div>
+          <div class="cert-label">Certificate <span class="cert-num">02</span></div>
+        </div>
+        <div class="cert-card" onclick="openCert('certificate3.jpeg', 3)">
+          <div class="cert-img-wrap">
+            <img src="certificate3.jpeg" alt="Certificate 3" loading="lazy" onerror="this.parentElement.classList.add('cert-missing')" />
+            <div class="cert-overlay"><i class="fas fa-expand"></i></div>
+            <div class="cert-placeholder-icon"><i class="fas fa-award"></i></div>
+          </div>
+          <div class="cert-label">Certificate <span class="cert-num">03</span></div>
+        </div>
+        <div class="cert-card" onclick="openCert('certificate4.jpeg', 4)">
+          <div class="cert-img-wrap">
+            <img src="certificate4.jpeg" alt="Certificate 4" loading="lazy" onerror="this.parentElement.classList.add('cert-missing')" />
+            <div class="cert-overlay"><i class="fas fa-expand"></i></div>
+            <div class="cert-placeholder-icon"><i class="fas fa-award"></i></div>
+          </div>
+          <div class="cert-label">Certificate <span class="cert-num">04</span></div>
+        </div>
+        <div class="cert-card" onclick="openCert('certificate5.jpeg', 5)">
+          <div class="cert-img-wrap">
+            <img src="certificate5.jpeg" alt="Certificate 5" loading="lazy" onerror="this.parentElement.classList.add('cert-missing')" />
+            <div class="cert-overlay"><i class="fas fa-expand"></i></div>
+            <div class="cert-placeholder-icon"><i class="fas fa-award"></i></div>
+          </div>
+          <div class="cert-label">Certificate <span class="cert-num">05</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Lightbox -->
+  <div class="cert-lightbox" id="certLightbox" onclick="closeCert(event)">
+    <div class="cert-lightbox-inner">
+      <button class="cert-close" onclick="closeCert(null, true)"><i class="fas fa-times"></i></button>
+      <button class="cert-nav prev" id="certPrev" onclick="navCert(-1)"><i class="fas fa-chevron-left"></i></button>
+      <img src="" id="certLightboxImg" alt="Certificate" />
+      <button class="cert-nav next" id="certNext" onclick="navCert(1)"><i class="fas fa-chevron-right"></i></button>
+      <div class="cert-counter" id="certCounter"></div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// ESTABLISH_CONTACT</span>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+        <div class="title-line"></div>
+        <p class="section-subtitle">Let's build something extraordinary together 🚀</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info glass-card">
+          <h3>Signal Frequencies</h3>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-detail">
+              <span class="contact-label">WhatsApp / Phone</span>
+              <a href="https://wa.me/918451055384" target="_blank" class="contact-value">+91 84510 55384</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-detail">
+              <span class="contact-label">Email</span>
+              <a href="mailto:aamofficial.1812@gmail.com" class="contact-value">aamofficial.1812@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div class="contact-detail">
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/ayaan-mistry-573633387" target="_blank" class="contact-value">Ayaan Mistry</a>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://wa.me/918451055384" target="_blank" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:aamofficial.1812@gmail.com" class="social-btn email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/ayaan-mistry-573633387" target="_blank" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap glass-card">
+          <h3>Send a Transmission</h3>
+          <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Commander ..." required />
+            </div>
+            <div class="form-group">
+              <label>Your Email</label>
+              <input type="email" placeholder="signal@universe.com" required />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea rows="5" placeholder="Your transmission here..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-btn">
+              Launch Message <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i> Message received! I'll respond soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>AAM<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-text">Crafted with <span class="heart">❤️</span> & <span class="highlight">AI</span> by Ayaan Asif Mistry</p>
+      <p class="footer-sub">© 2025 · All rights reserved · Built from the cosmos</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
